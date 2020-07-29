@@ -7,12 +7,10 @@ public class Book extends Publication{
 
     //default constructor
     public Book(String title, String author, int year, int pages, String publisher , String isbn) {
-        this.setTitle(title);
+        super(title , publisher , year);
         this.author = author;
-        this.setYear(year);
         this.pages = pages;
         this.setPublisher(publisher);
-        this.isbn = isbn;
     }
 
 
